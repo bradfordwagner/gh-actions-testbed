@@ -7,10 +7,10 @@ jobs:
       image: quay.io/bradfordwagner/ansible:3.6.2-debian_bookworm
       # image: alpine
     steps:
-      - name: Setup go-task/task
-        uses: lukeshay/setup-task@v1
+      - name: Setup go-task
+        uses: pnorton5432/setup-task@v1
         with:
-          version: 3.11.0 # Optional
+          task-version: 3.29.1
       - name: task version
         run: task --version
       - name: my-step
