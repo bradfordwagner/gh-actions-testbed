@@ -11,6 +11,8 @@ jobs:
         uses: lukeshay/setup-task@v1
         with:
           version: 3.11.0 # Optional
+      - name: task version
+        run: task --version
       - name: my-step
         run: echo "Hello World!"
 
