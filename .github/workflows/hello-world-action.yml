@@ -4,7 +4,8 @@ jobs:
   my-job:
     runs-on: ubuntu-latest
     container:
-      image: alpine
+      image: quay.io/bradfordwagner/ansible:3.6.2-debian_bookworm
+      # image: alpine
     steps:
       - name: my-step
         run: echo "Hello World!"
